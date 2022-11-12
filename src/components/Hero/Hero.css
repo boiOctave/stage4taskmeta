@@ -33,6 +33,7 @@ section#hero {
 
 .search-box {
     max-width: 95.69%;
+    column-gap: 0;
 }
 .search-box input {
     color: #434343;

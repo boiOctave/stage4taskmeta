@@ -20,7 +20,7 @@ const Hero = () => {
                         in the metaverse, get a chance to turn your
                         <br /> imagination to reality at your comfort zone
                     </p>
-                    <div className='search-box'>
+                    <div className='search-box flex'>
                         <input
                             type='text'
                             title='search'
