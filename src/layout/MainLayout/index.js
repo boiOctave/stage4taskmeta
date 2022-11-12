@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import './MainLayout.css';
 const MainLayout = () => {
     return (
-        <div className='container'>
+        <div className='main__container'>
             {' '}
             <Outlet />
         </div>
