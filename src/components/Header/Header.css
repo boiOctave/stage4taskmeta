@@ -6,8 +6,8 @@
     padding-top: 4.3rem;
     padding-bottom: 3rem;
     width: 100%;
-    z-index: var(--z-fixed);
-    transition: var(--tran-0-5);
+    z-index: 999;
+    transition: all 0.5s ease;
 }
 .nav {
     justify-content: space-between;
@@ -34,6 +34,12 @@
     white-space: nowrap;
 }
 
+.hamburgerMenu,
+.closeMenu,
+.nav__button-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1095px) {
     .nav-links {
         width: 353px;
@@ -42,9 +48,70 @@
         font-size: 16px;
     }
 }
+
 @media screen and (max-width: 925px) {
     .logoContent img {
         width: 200px;
         height: 31.6px;
+    }
+}
+@media screen and (max-width: 864px) {
+    .hamburgerMenu,
+    .closeMenu,
+    .nav__button-mobile {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        right: -400px;
+        top: 0rem;
+        box-shadow: 0px 4px 4px #00000040;
+        border-radius: 15px;
+        height: 99vh;
+        transition: all 0.5s ease;
+        background-color: #fff;
+    }
+    .nav-links.open {
+        right: 0;
+    }
+    .nav-links a {
+        font-size: 1.7rem;
+    }
+    .nav__button {
+        display: none;
+    }
+    .nav__button-mobile {
+        width: 170px;
+        height: 48px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+    .hamburgerMenu span,
+    .closeMenu span {
+        font-size: 4rem;
+    }
+
+    .closeMenu {
+        position: absolute;
+        top: 36px;
+        right: 26px;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    .logoContent img {
+        width: 155px;
+        height: 23.6px;
+    }
+    .nav-links.open {
+        right: -39px;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 36px;
+        right: 51px;
     }
 }
