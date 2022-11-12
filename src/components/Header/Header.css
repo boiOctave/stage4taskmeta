@@ -19,12 +19,12 @@
 }
 
 .nav-links {
-    width: 426px;
+    width: 626px;
     justify-content: space-between;
 }
 .nav-links a {
     color: #434343;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .nav__button {
@@ -38,6 +38,18 @@
 .closeMenu,
 .nav__button-mobile {
     display: none;
+}
+/*//////////////////    MEDIA QUERIES   ////////////////////*/
+
+@media screen and (max-width: 1341px) {
+    .nav-links {
+        width: 583px;
+    }
+}
+@media screen and (max-width: 1285px) {
+    .nav-links {
+        width: 420px;
+    }
 }
 
 @media screen and (max-width: 1095px) {

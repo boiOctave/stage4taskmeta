@@ -30,7 +30,7 @@ section#hero {
 }
 .search-box input {
     color: #b8b8b8;
-    max-width: 59%;
+    max-width: 53%;
     width: 100%;
     padding: 17.7px 9px;
     border-top-left-radius: 9px;
@@ -75,4 +75,18 @@ section#hero {
     flex-direction: column;
     justify-content: flex-start;
     gap: 5px;
+}
+
+/*//////////      MEDIA QUERIES     //////////*/
+
+@media screen and (max-width: 1225px) {
+    .search-box input {
+        max-width: 55%;
+    }
+    .search__button {
+        max-width: 178px;
+    }
+    hero__left h2 {
+        font-size: 4.2rem;
+    }
 }
