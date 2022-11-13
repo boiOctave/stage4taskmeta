@@ -1,4 +1,5 @@
 import Community from 'components/Community/Community';
+import Footer from 'components/Footer/Footer';
 import Header from 'components/Header/Header';
 import Hero from 'components/Hero/Hero';
 import NFTs from 'components/NFTs/NFTs';
@@ -13,6 +14,7 @@ const Main = () => {
                 <Wallets />
                 <Community />
                 <NFTs />
+                <Footer />
             </main>
         </>
     );
