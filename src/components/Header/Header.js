@@ -20,15 +20,15 @@ const Header = () => {
                     </li>
 
                     <li className='nav-link'>
-                        <a href='#'>Place to stay</a>
+                        <a href='/place'>Place to stay</a>
                     </li>
 
                     <li className='nav-link'>
-                        <a href='#'>NFTs</a>
+                        <a href='#nfts'>NFTs</a>
                     </li>
 
                     <li className='nav-link'>
-                        <a href='#'>Community</a>
+                        <a href='#comunity'>Community</a>
                     </li>
                     <li>
                         <div className='nav__button-container '>

@@ -71,6 +71,12 @@ section#hero {
     max-width: 230px;
     width: 100%;
     font-size: 1.6rem;
+    border: 1px solid #a02279;
+    position: relative;
+}
+.search__button:hover {
+    background-color: #571b44;
+    border: 1px solid #571b44;
 }
 
 .hero__right {
