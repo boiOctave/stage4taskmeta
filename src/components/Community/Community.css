@@ -1,0 +1,129 @@
+.community-content {
+    flex-direction: column;
+    gap: 3.9rem;
+}
+.community-content h1 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+.meta__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+.card__img {
+    margin-bottom: 1rem;
+}
+
+.card__img img {
+    width: 260px;
+    height: 265px;
+}
+.descrption__bottom img {
+    width: 92px;
+    object-fit: contain;
+}
+.card__name,
+.card__distance {
+    font-size: 12px;
+    color: #434343;
+    font-weight: 400;
+}
+.descrption__top,
+.descrption__middle {
+    display: flex;
+    max-width: 262px;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    color: #434343;
+}
+
+.card {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 23.5px 15px;
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+}
+.card__description {
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+img.heart {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 38px;
+    right: 34px;
+}
+
+@media screen and (max-width: 1390px) {
+    .card__img .card__image {
+        width: 236px;
+        height: 241px;
+    }
+}
+@media screen and (max-width: 1355px) {
+    .card__img .card__image {
+        width: 214px;
+        height: 219px;
+    }
+    .card__description {
+        width: 104%;
+    }
+
+    .card__name,
+    .card__distance,
+    .card__length {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 1304px) {
+    .meta__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card__description {
+        width: auto;
+    }
+    .card {
+        width: 254px;
+    }
+
+    img.heart {
+        top: 39px;
+        right: 31px;
+    }
+    span.card__length {
+        font-size: 10px;
+    }
+    .descrption__top,
+    .descrption__middle {
+        gap: 1rem;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .meta__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .meta__cards {
+        width: auto;
+    }
+}
+@media screen and (max-width: 589px) {
+    .meta__cards {
+        grid-template-columns: 1fr;
+    }
+}
