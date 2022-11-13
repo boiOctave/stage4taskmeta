@@ -121,6 +121,9 @@ img.heart {
     .meta__cards {
         width: auto;
     }
+    .community-content h1 {
+        font-size: 2.8rem;
+    }
 }
 @media screen and (max-width: 589px) {
     .meta__cards {
