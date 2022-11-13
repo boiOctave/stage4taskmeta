@@ -124,9 +124,43 @@ img.heart {
     .community-content h1 {
         font-size: 2.8rem;
     }
+    .card__img .card__image {
+        width: 270px;
+        height: 275px;
+    }
+    .card {
+        width: 316px;
+    }
+    .descrption__top,
+    .descrption__middle {
+        gap: 2rem;
+    }
+    .card__name,
+    .card__distance {
+        font-size: 14px;
+    }
+    span.card__length {
+        font-size: 13px;
+    }
 }
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 716px) {
     .meta__cards {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 350px) {
+    .card__img .card__image {
+        width: 221px;
+        height: 226px;
+    }
+    .card {
+        width: 264px;
+    }
+    .card__name,
+    .card__distance {
+        font-size: 11px;
+    }
+    span.card__length {
+        font-size: 10px;
     }
 }

@@ -53,3 +53,9 @@ button.button.nfts__button:hover {
         max-width: inherit;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .nfts__description h2 {
+        font-size: 28px;
+    }
+}
