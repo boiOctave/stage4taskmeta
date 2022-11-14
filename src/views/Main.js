@@ -5,6 +5,7 @@ import Hero from 'components/Hero/Hero';
 import NFTs from 'components/NFTs/NFTs';
 import Wallets from '../components/Wallets/Wallets';
 
+import { homeData } from 'data/Data';
 const Main = () => {
     return (
         <>
@@ -12,7 +13,7 @@ const Main = () => {
             <main>
                 <Hero />
                 <Wallets />
-                <Community />
+                <Community data={homeData} />
                 <NFTs />
                 <Footer />
             </main>

@@ -1,17 +1,17 @@
 import React from 'react';
-import { homeData } from 'data/Data';
+
 import rating from 'assets/images/Frame 595285stars.svg';
 import heart from 'assets/images/heart.svg';
 
 import './Community.css';
 
-const Community = () => {
+const Community = ({ data }) => {
     return (
         <section className='communiy section ' id='community'>
             <div className='community-content container flex'>
                 <h1>Inspiration for your next adventure</h1>
                 <div className='meta__cards'>
-                    {homeData.map((card, index) => (
+                    {data.map((card, index) => (
                         <div className='card' key={index}>
                             <div className='card__img'>
                                 <img
