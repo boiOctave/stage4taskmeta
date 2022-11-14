@@ -271,3 +271,16 @@ img.heart {
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .location img {
+        width: 13px;
+        height: 13px;
+    }
+    .location span {
+        font-size: 10px;
+    }
+    .location.flex {
+        padding: 0 9px;
+    }
+}
