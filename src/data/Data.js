@@ -10,10 +10,10 @@ import house9 from '../assets/images/Frame 151house9.svg';
 import house10 from '../assets/images/Frame 151house10.png';
 import house11 from '../assets/images/Frame 151house11.svg';
 import house12 from '../assets/images/Frame 151house12.png';
-import house13 from '../assets/images/Frame 151house13.svg';
-import house14 from '../assets/images/Frame 151house14.svg';
-import house15 from '../assets/images/Frame 151house15.svg';
-import house16 from '../assets/images/Frame 151house16.svg';
+import house13 from '../assets/images/Frame 151house13.png';
+import house14 from '../assets/images/Frame 151hous14.png';
+import house15 from '../assets/images/Frame 151house15.png';
+import house16 from '../assets/images/Frame 151house16.png';
 
 export const homeData = [
     {
