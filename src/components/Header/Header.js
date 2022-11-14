@@ -33,7 +33,7 @@ const Header = () => {
                     <li
                         className='nav-link'
                         onClick={() => setIsMenuOpen(false)}>
-                        <a href='#'>Home</a>
+                        <Link to='/'>Home</Link>
                     </li>
 
                     <li
