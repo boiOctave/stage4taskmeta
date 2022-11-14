@@ -1,16 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import rating from 'assets/images/Frame 595285stars.svg';
 import heart from 'assets/images/heart.svg';
+import setting from 'assets/images/setting-5setting.svg';
 
 import './Community.css';
 
+const sortOptions = [
+    'Resturant',
+    'Cottage',
+    'Castle',
+    'fantasy city',
+    'beach',
+    'Carbins',
+    'off-grid',
+    'Farm',
+];
+
 const Community = ({ data, isHome }) => {
+    const [selectOpen, setSelectOpen] = useState(false);
+    const [selectedName, setSelectedName] = useState();
+    const handlselect = (e) => {
+        setSelectOpen(!selectOpen);
+        setSelectedName(e.target.innerText);
+    };
+
     return (
         <section className='communiy section ' id='community'>
             <div className='community-content container flex'>
                 {isHome && <h1>Inspiration for your next adventure</h1>}
+                {!isHome && (
+                    <div className='items__sort flex'>
+                        {sortOptions.map((option) => (
+                            <div key={option} className='sort__options'>
+                                {option}
+                            </div>
+                        ))}
+                        <div className='sort__options__mobile '>
+                            <span onClick={() => setSelectOpen(!selectOpen)}>
+                                {selectedName ? selectedName : `Sort       >`}
+                            </span>
 
+                            <div
+                                className={`options__mobile ${
+                                    selectOpen ? 'openSelect' : ''
+                                }`}>
+                                {sortOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className='sort__options__select'
+                                        onClick={handlselect}>
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className='location flex'>
+                            <span>location</span>
+                            <img src={setting} alt='setting' />
+                        </div>
+                    </div>
+                )}
                 <div className='meta__cards'>
                     {data.map((card, index) => (
                         <div className='card' key={index}>

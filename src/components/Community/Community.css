@@ -7,6 +7,43 @@
     text-align: center;
 }
 
+.items__sort.flex {
+    margin-top: 148px;
+    gap: 48px;
+}
+
+.sort__options {
+    font-size: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.location span {
+    font-size: 16px;
+}
+.location.flex {
+    padding: 0 17px;
+    width: 100%;
+    max-width: 161px;
+    height: 48px;
+    justify-content: space-between;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.location.flex:hover {
+    opacity: 0.7;
+}
+.items__sort.flex {
+    margin-top: 148px;
+    gap: 48px;
+    justify-content: space-between;
+    width: 100%;
+}
+.location img {
+    width: 24px;
+    height: 24px;
+}
+
 .meta__cards {
     width: 100%;
     display: grid;
@@ -66,6 +103,9 @@ img.heart {
     top: 38px;
     right: 34px;
 }
+.sort__options__mobile {
+    display: none;
+}
 
 @media screen and (max-width: 1390px) {
     .card__img .card__image {
@@ -86,6 +126,9 @@ img.heart {
     .card__distance,
     .card__length {
         white-space: nowrap;
+    }
+    .sort__options {
+        font-size: 17px;
     }
 }
 
@@ -112,8 +155,16 @@ img.heart {
         gap: 1rem;
         align-items: baseline;
     }
+    .items__sort.flex {
+        gap: 0px;
+    }
 }
 
+@media screen and (max-width: 1086px) {
+    .sort__options {
+        font-size: 15px;
+    }
+}
 @media screen and (max-width: 933px) {
     .meta__cards {
         grid-template-columns: 1fr 1fr;
@@ -141,6 +192,55 @@ img.heart {
     }
     span.card__length {
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .sort__options {
+        display: none;
+    }
+    .sort__options__mobile {
+        display: block;
+    }
+    .sort__options__mobile {
+        position: relative;
+    }
+    .sort__options__mobile span {
+        font-size: 17px;
+        padding: 1.1rem 5rem;
+        border: 1px solid rgba(128, 128, 128, 0.485);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .options__mobile {
+        position: absolute;
+        top: 40px;
+        right: 1px;
+        font-size: 16px;
+        z-index: 7;
+        background-color: #fff;
+        padding: 9px 43px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .openSelect {
+        opacity: 1;
+    }
+    .sort__options__select {
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 793px) {
+    .community-content.container.flex {
+        padding: 0 13px;
+    }
+    .location.flex {
+        padding: 0 17px;
+        width: auto;
     }
 }
 @media screen and (max-width: 716px) {
