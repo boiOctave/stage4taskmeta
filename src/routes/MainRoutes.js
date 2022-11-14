@@ -7,6 +7,9 @@ import Loadable from 'components/ui-components/Loadable';
 // dashboard routing
 
 const Main = Loadable(lazy(() => import('views/Main.js')));
+const PlaceToStay = Loadable(
+    lazy(() => import('views/PlaceToStay/PlaceToStay'))
+);
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -17,6 +20,10 @@ const MainRoutes = {
         {
             path: '/',
             element: <Main />,
+        },
+        {
+            path: '/place-to-stay',
+            element: <PlaceToStay />,
         },
     ],
 };
