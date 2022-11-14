@@ -7,7 +7,7 @@ import house4 from '../../assets/images/image 5.svg';
 
 const Hero = () => {
     return (
-        <section class='hero section' id='hero'>
+        <section className='hero section' id='hero'>
             <div className='hero-content container flex'>
                 <div className='hero__left'>
                     <h2>
