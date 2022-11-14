@@ -226,9 +226,11 @@ img.heart {
         cursor: pointer;
         opacity: 0;
         transition: all 0.3s ease;
+        visiblity: hidden;
     }
     .openSelect {
         opacity: 1;
+        visibility: visible;
     }
     .sort__options__select {
         cursor: pointer;
