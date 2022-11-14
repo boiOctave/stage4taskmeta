@@ -13,7 +13,7 @@ const Main = () => {
             <main>
                 <Hero />
                 <Wallets />
-                <Community data={homeData} />
+                <Community data={homeData} isHome={true} />
                 <NFTs />
                 <Footer />
             </main>

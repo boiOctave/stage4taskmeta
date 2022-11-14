@@ -5,11 +5,12 @@ import heart from 'assets/images/heart.svg';
 
 import './Community.css';
 
-const Community = ({ data }) => {
+const Community = ({ data, isHome }) => {
     return (
         <section className='communiy section ' id='community'>
             <div className='community-content container flex'>
-                <h1>Inspiration for your next adventure</h1>
+                {isHome && <h1>Inspiration for your next adventure</h1>}
+
                 <div className='meta__cards'>
                     {data.map((card, index) => (
                         <div className='card' key={index}>

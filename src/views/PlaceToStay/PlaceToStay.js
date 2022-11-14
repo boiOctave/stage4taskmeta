@@ -10,7 +10,7 @@ const PlaceToStay = () => {
         <>
             <Header />
             <main>
-                <Community data={placesData} />
+                <Community data={placesData} isHome={false} />
 
                 <Footer />
             </main>
