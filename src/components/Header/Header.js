@@ -1,12 +1,20 @@
+import Modal from 'components/ui-components/Modal';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { openModal } from 'features/modal/modalSlice';
+
 import './Header.css';
 
 const Header = () => {
+    const modal = useSelector((state) => state.modal.open);
+    const dispatch = useDispatch();
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+
     const [windowPosition, setWindowPosition] = useState(0);
 
     useEffect(() => {
@@ -22,6 +30,11 @@ const Header = () => {
 
     const handleMenu = () => {
         isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true);
+    };
+    const handleModalOpen = () => {
+        setIsMenuOpen(false);
+        dispatch(openModal());
+        document.body.style.overflowY = 'hidden';
     };
     return (
         <header className={`header ${isScrolled ? 'inverted' : ''}`}>
@@ -56,6 +69,7 @@ const Header = () => {
                     <li>
                         <div className='nav__button-container '>
                             <button
+                                onClick={handleModalOpen}
                                 type='submit'
                                 className='button nav__button-mobile'>
                                 Connect Wallet
@@ -72,7 +86,10 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className='nav__button-container '>
-                    <button type='submit' className='button nav__button'>
+                    <button
+                        type='submit'
+                        className='button nav__button'
+                        onClick={handleModalOpen}>
                         Connect Wallet
                     </button>
                 </div>
@@ -80,6 +97,7 @@ const Header = () => {
                     <span className='material-symbols-outlined'>menu</span>
                 </div>
             </nav>
+            <Modal />
         </header>
     );
 };

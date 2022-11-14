@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import rating from 'assets/images/Frame 595285stars.svg';
 import heart from 'assets/images/heart.svg';
 import setting from 'assets/images/setting-5setting.svg';
+import chevronRight from 'assets/images/Down Chevronchevron right.svg';
 
 import './Community.css';
 
@@ -38,9 +39,13 @@ const Community = ({ data, isHome }) => {
                         ))}
                         <div className='sort__options__mobile '>
                             <span onClick={() => setSelectOpen(!selectOpen)}>
-                                {selectedName ? selectedName : `Sort       >`}
-                            </span>
-
+                                {selectedName ? selectedName : `Sort     `}
+                            </span>{' '}
+                            <img
+                                src={chevronRight}
+                                alt='right'
+                                className='chevron__right'
+                            />
                             <div
                                 className={`options__mobile ${
                                     selectOpen ? 'openSelect' : ''

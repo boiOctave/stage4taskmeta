@@ -233,6 +233,13 @@ img.heart {
     .sort__options__select {
         cursor: pointer;
     }
+    img.chevron__right {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 15px;
+        top: 6px;
+    }
 }
 @media screen and (max-width: 793px) {
     .community-content.container.flex {
