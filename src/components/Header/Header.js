@@ -21,7 +21,7 @@ const Header = () => {
         window.onscroll = () => {
             setWindowPosition(window.scrollY);
         };
-        if (windowPosition >= 60) {
+        if (windowPosition >= 40) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);

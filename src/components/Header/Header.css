@@ -7,7 +7,7 @@
     padding-bottom: 3rem;
     width: 100%;
     z-index: 999999999;
-    transition: all 1s ease;
+    transition: all 0.4s ease;
 }
 .inverted {
     padding-top: 15px;

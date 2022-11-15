@@ -11,7 +11,6 @@
 }
 
 .modal {
-    display: block;
     position: absolute;
     min-width: 600px;
     /* width: 300px; */
@@ -25,11 +24,12 @@
     background-color: #fff;
     border-radius: 9px;
     transition: all 1s ease;
+    visibility: hidden;
     opacity: 1;
     scale: 1;
 }
 .closeModal {
-    display: none;
+    visibility: visible;
     opacity: 0;
     scale: 0;
 }
