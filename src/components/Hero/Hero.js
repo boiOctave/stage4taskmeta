@@ -1,11 +1,10 @@
-import './Hero.css';
-
 import house1 from '../../assets/images/image 4.svg';
 import house2 from '../../assets/images/image 6.svg';
 import house3 from '../../assets/images/image 3.svg';
 import house4 from '../../assets/images/image 5.svg';
 
-const Hero = () => {
+import './Hero.css';
+const Hero = ({}) => {
     return (
         <section className='hero section' id='hero'>
             <div className='hero-content container flex'>

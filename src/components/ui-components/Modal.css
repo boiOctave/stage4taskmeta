@@ -25,12 +25,12 @@
     border-radius: 9px;
     transition: all 1s ease;
     visibility: visible;
-
+    opacity: 1;
     scale: 1;
 }
 .closeModal {
     visibility: hidden;
-
+    opacity: 0;
     scale: 0;
 }
 .top__modal {
