@@ -4,7 +4,7 @@
     width: 100%;
     top: 0;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .backdrop.closeModal {
     display: none;
@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 9px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     visibility: visible;
     opacity: 1;
     scale: 1;
