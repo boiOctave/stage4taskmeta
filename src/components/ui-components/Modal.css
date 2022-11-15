@@ -66,6 +66,11 @@
     height: 44px;
     object-fit: contain;
 }
+
+img.meta__img {
+    width: 135px;
+    height: 44px;
+}
 img.chevronright {
     width: 20px;
     height: 20px;
@@ -95,6 +100,19 @@ img.chevronright {
         min-width: auto;
         width: 85%;
     }
+    .header.inverted .modal {
+        bottom: -819%;
+    }
+
+    .modal {
+        height: 280px;
+    }
+    .top__modal h4 {
+        font-size: 18px;
+    }
+    .bottom__modal span {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 398px) {
     .top__modal::after {
@@ -105,5 +123,9 @@ img.chevronright {
     .wallets img {
         width: 122px;
         height: 44px;
+    }
+    img.chevronright {
+        width: 20px;
+        height: 20px;
     }
 }

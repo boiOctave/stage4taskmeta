@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import closeicon from 'assets/images/xxicon.svg';
 import chevron from 'assets/images/Down Chevronchevron right.svg';
 import walletconnect from 'assets/images/Frame 195walletconnect.svg';
+import meta from 'assets/images/Frame 195meta.png';
 
 import { closeModal } from 'features/modal/modalSlice';
 
@@ -37,7 +37,8 @@ const Modal = () => {
                     <span>choose your prerred wallet:</span>
                     <div className='wallets'>
                         <div className='meta'>
-                            <img src={walletconnect} alt='meta' />
+                            <img src={meta} alt='meta' className='meta__img' />
+
                             <img
                                 src={chevron}
                                 alt='chevron'
