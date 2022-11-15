@@ -226,14 +226,17 @@ img.heart {
         cursor: pointer;
         opacity: 0;
         transition: all 0.3s ease;
-        visiblity: hidden;
+        visibility: hidden;
+        scale: 0;
     }
     .openSelect {
         opacity: 1;
         visibility: visible;
+        scale: 1;
     }
     .sort__options__select {
         cursor: pointer;
+        white-space: nowrap;
     }
     img.chevron__right {
         width: 16px;
@@ -275,14 +278,8 @@ img.heart {
 }
 
 @media screen and (max-width: 300px) {
-    .location img {
-        width: 13px;
-        height: 13px;
-    }
-    .location span {
-        font-size: 10px;
-    }
-    .location.flex {
-        padding: 0 9px;
+    .items__sort.flex {
+        flex-direction: column-reverse;
+        gap: 41px;
     }
 }
