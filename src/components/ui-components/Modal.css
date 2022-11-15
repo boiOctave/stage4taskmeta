@@ -35,6 +35,8 @@
     visibility: visible;
     opacity: 1;
     scale: 1;
+    position: relative;
+    z-index: 9999;
 }
 .closeModal {
     visibility: hidden;
