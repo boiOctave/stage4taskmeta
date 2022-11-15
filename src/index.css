@@ -92,12 +92,3 @@ input:focus {
 .button:hover {
     background-color: #571b44;
 }
-
-.header.inverted .modal {
-    /* display: none; */
-    bottom: -580%;
-}
-
-.header.inverted .modal {
-    bottom: -580%;
-}

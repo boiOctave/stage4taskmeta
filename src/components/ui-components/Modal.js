@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import closeicon from 'assets/images/xxicon.svg';
 import chevron from 'assets/images/Down Chevronchevron right.svg';
 import walletconnect from 'assets/images/Frame 195walletconnect.svg';
-import meta from 'assets/images/Frame 195meta.png';
+import meta from 'assets/images/Frame 195metawallet.svg';
 
 import { closeModal } from 'features/modal/modalSlice';
 
