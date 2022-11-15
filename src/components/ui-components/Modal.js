@@ -19,8 +19,10 @@ const Modal = () => {
     };
 
     return (
-        <>
-            {' '}
+        <div
+            className={`modal__container ${
+                modal === false ? 'closeModal' : ''
+            }`}>
             <div
                 className={`backdrop ${modal === false ? 'closeModal' : ''}`}
                 onClick={handleClose}></div>
@@ -56,7 +58,7 @@ const Modal = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
