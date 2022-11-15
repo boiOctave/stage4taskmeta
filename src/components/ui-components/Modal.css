@@ -24,13 +24,13 @@
     background-color: #fff;
     border-radius: 9px;
     transition: all 1s ease;
-    visibility: hidden;
-    opacity: 1;
+    visibility: visible;
+
     scale: 1;
 }
 .closeModal {
-    visibility: visible;
-    opacity: 0;
+    visibility: hidden;
+
     scale: 0;
 }
 .top__modal {
