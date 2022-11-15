@@ -277,7 +277,7 @@ img.heart {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     .items__sort.flex {
         flex-direction: column-reverse;
         gap: 41px;
